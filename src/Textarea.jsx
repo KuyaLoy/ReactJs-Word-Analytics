@@ -5,6 +5,9 @@ export default function Textarea() {
   const [text, setText] = useState("");
   const [warningText, setWarningText] = useState("");
 
+  const numberOfCharacters = text.length;
+  console.log(numberOfCharacters);
+
   const handleChange = (e) => {
     let newText = e.target.value;
 
